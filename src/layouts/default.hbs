@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{>head}}
+	</head>
+	<body>
+		<div class="wrapper">
+			{{>body}}
+		</div>
+		<script src="js/lib/jquery.js"></script>
+		{{#scripts}}
+		<script src="js/{{.}}"></script>
+		{{/scripts}}
+	</body>
+</html>

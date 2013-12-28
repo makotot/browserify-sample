@@ -1,0 +1,29 @@
+@import 'partials/colors'
+
+.tab-wrapper
+
+.tab-list
+  @extend %clearfix
+  li
+    display: block
+    float: left
+    margin-right: 10px
+  a
+    display: block
+    padding: 6px 24px
+    background-color: $tab-bg
+    color: $tab-link
+    &:hover
+      background-color: $tab-hover-bg
+      color: $tab-hover
+
+.tab-list-current
+  a
+    background-color: $tab-current-bg
+
+
+.tab-content-list
+  display: block
+  background-color: $tab-content-bg
+  li
+    padding: 0 20px 20px

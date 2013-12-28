@@ -1,0 +1,29 @@
+@import 'partials/colors'
+
+a
+  color: $base-link-color
+  text-decoration: none
+  &:hover
+    color: $base-hover-color
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+h1
+  margin: 0
+  padding: 0 20px
+
+h2
+  @extend h1
+  padding: 20px 0
+
+p
+  margin: 0
+
+%clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
