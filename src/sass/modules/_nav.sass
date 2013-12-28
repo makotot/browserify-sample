@@ -1,0 +1,25 @@
+@charset 'UTF-8'
+
+@import 'partials/colors'
+
+.nav
+  position: fixed
+  display: block
+  width: 100%
+  background-color: $nav-bg
+  font-size: 0.8rem
+  a
+    color: $nav-link
+    &:hover
+      background-color: $nav-link-hover-bg
+      color: $nav-link-hover
+
+.nav-list
+  float: right
+  padding: 0 20px
+  @extend %clearfix
+  li
+    float: left
+    a
+      display: block
+      padding: 4px 10px

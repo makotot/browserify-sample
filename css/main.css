@@ -19,7 +19,7 @@ h2 {
 p {
   margin: 0; }
 
-.tab-list:after {
+.nav-list:after, .tab-list:after {
   content: "";
   display: table;
   clear: both; }
@@ -28,10 +28,31 @@ p {
   width: 100%; }
 
 header {
-  padding: 20px 0; }
+  padding: 40px 0; }
 
 .content {
   padding: 0 20px 20px; }
+
+.nav {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background-color: #46516d;
+  font-size: 0.8rem; }
+  .nav a {
+    color: #fefefe; }
+    .nav a:hover {
+      background-color: #899ed3;
+      color: #eaecec; }
+
+.nav-list {
+  float: right;
+  padding: 0 20px; }
+  .nav-list li {
+    float: left; }
+    .nav-list li a {
+      display: block;
+      padding: 4px 10px; }
 
 .tab-list li {
   display: block;
