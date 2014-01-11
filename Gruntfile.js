@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 			},
 			html: {
 				files: ['<%= path.src %>/**/*.hbs'],
-				tasks: ['newer:assemble']
+				tasks: ['assemble']
 			},
 			js: {
 				files: ['<%= path.src %>/js/bundle/**/*.js'],
@@ -148,7 +148,7 @@ module.exports = function (grunt) {
 		pattern: ['assemble', 'grunt-*']
 	});
 
-	grunt.registerTask('default', ['newer:assemble', 'browserify', 'sass']);
+	grunt.registerTask('default', ['assemble', 'browserify', 'sass']);
 	grunt.registerTask('install', ['bower:install', 'newer:copy:bower']);
-	grunt.registerTask('serve', ['newer:assemble', 'browserify', 'sass', 'newer:copy:js', 'newer:copy:css', 'connect', 'watch']);
+	grunt.registerTask('serve', ['assemble', 'browserify', 'sass', 'newer:copy:js', 'newer:copy:css', 'connect', 'watch']);
 };
